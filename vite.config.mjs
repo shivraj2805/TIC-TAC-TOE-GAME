@@ -1,16 +1,15 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/minimax-game-ai/',
+  base: '/minimax-game-ai/', 
   server: {
-    port: 8080,   // Ensures Render detects the port
-    host: true    // Allows external access (0.0.0.0)
+    port: 10000,  // Match Render's assigned port
+    host: '0.0.0.0' // Ensure external access
   },
   preview: {
-    port: 8080,   // Ensure preview uses the correct port
-    host: true
+    port: 10000,
+    host: '0.0.0.0'
   }
 });
