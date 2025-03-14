@@ -5,7 +5,10 @@
 -   `ReactJS`
 -   `Framer Motion`
 
-
+## For more support go to 
+```
+https://github.com/shivraj2805/TIC-TAC-TOE-GAME
+```
 
 ## Go into the repository
 
