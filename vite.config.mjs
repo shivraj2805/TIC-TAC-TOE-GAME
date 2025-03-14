@@ -5,11 +5,11 @@ export default defineConfig({
   plugins: [react()],
   base: '/minimax-game-ai/', 
   server: {
-    port: 10000,  // Match Render's assigned port
-    host: '0.0.0.0' // Ensure external access
+    host: '0.0.0.0', // Allow external access
+    port: process.env.PORT || 3000, // Use Render's assigned port
   },
   preview: {
-    port: 10000,
-    host: '0.0.0.0'
-  }
+    host: '0.0.0.0',
+    port: process.env.PORT || 3000,
+  },
 });
